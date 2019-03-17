@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4EE4A1F-1FB2-496F-833B-39624ED5F21E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HeThong</RootNamespace>
+    <AssemblyName>HeThong</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmQuanLyGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyGroups.Designer.cs">
+      <DependentUpon>frmQuanLyGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncQuanLyGroupUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncQuanLyGroupUC.Designer.cs">
+      <DependentUpon>mncQuanLyGroupUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncQuanLyNhanVienUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncQuanLyNhanVienUC.Designer.cs">
+      <DependentUpon>mncQuanLyNhanVienUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncQuanLyNhanVienUserUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncQuanLyNhanVienUserUC.Designer.cs">
+      <DependentUpon>mncQuanLyNhanVienUserUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmQuanLyGroups.resx">
+      <DependentUpon>frmQuanLyGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncQuanLyGroupUC.resx">
+      <DependentUpon>mncQuanLyGroupUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncQuanLyNhanVienUC.resx">
+      <DependentUpon>mncQuanLyNhanVienUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncQuanLyNhanVienUserUC.resx">
+      <DependentUpon>mncQuanLyNhanVienUserUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaoCao\BaoCao.csproj">
+      <Project>{3669925c-d49a-41ab-b4ba-18e87cbb03aa}</Project>
+      <Name>BaoCao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{b2d484e3-0eb9-4b81-ab05-557299916183}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emtity\EntityClass.csproj">
+      <Project>{ff9da219-a8c4-4a75-9a55-db128e2d38e7}</Project>
+      <Name>EntityClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KhamBenh\KhamBenh.csproj">
+      <Project>{cda73116-43df-4c49-94cf-e70ed381e7b7}</Project>
+      <Name>KhamBenh</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KhamSucKhoe\KhamSucKhoe.csproj">
+      <Project>{aa52ca74-8c32-47a2-a5ce-fd372e57d0b3}</Project>
+      <Name>KhamSucKhoe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThuVien\ThuVien.csproj">
+      <Project>{d50f6f32-7586-4395-b570-f05e4ea3828a}</Project>
+      <Name>ThuVien</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TiepNhan\TiepNhan.csproj">
+      <Project>{afd4a2fd-01fa-43b4-98a3-1079287f9127}</Project>
+      <Name>TiepNhan</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VanPhongPham\VanPhongPham.csproj">
+      <Project>{182adb54-eaad-470d-9966-805d3386c90c}</Project>
+      <Name>VanPhongPham</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VienPhi\VienPhi.csproj">
+      <Project>{0575ac20-527d-4e04-8379-2bb7c17c3474}</Project>
+      <Name>VienPhi</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

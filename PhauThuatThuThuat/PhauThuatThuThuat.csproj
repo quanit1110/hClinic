@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65A5DDA0-92AD-4CF4-8F77-C24519586418}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhauThuatThuThuat</RootNamespace>
+    <AssemblyName>PhauThuatThuThuat</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="mncBienBanHoiChuanUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncBienBanHoiChuanUC.Designer.cs">
+      <DependentUpon>mncBienBanHoiChuanUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncDanhSachBenhNhanChoMoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncDanhSachBenhNhanChoMoUC.Designer.cs">
+      <DependentUpon>mncDanhSachBenhNhanChoMoUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncDanhSachBenhNhanKhamHoiChuanUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncDanhSachBenhNhanKhamHoiChuanUC.Designer.cs">
+      <DependentUpon>mncDanhSachBenhNhanKhamHoiChuanUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncDanhSachKhamGayMeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncDanhSachKhamGayMeUC.Designer.cs">
+      <DependentUpon>mncDanhSachKhamGayMeUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncDanhSachThongTinLichMoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncDanhSachThongTinLichMoUC.Designer.cs">
+      <DependentUpon>mncDanhSachThongTinLichMoUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncKhamGayMeBenhNhanTimUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncKhamGayMeBenhNhanTimUC.Designer.cs">
+      <DependentUpon>mncKhamGayMeBenhNhanTimUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncKhamGayMeNguoiLonUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncKhamGayMeNguoiLonUC.Designer.cs">
+      <DependentUpon>mncKhamGayMeNguoiLonUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncTuongTrinhPTTTNoiTruDungCuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncTuongTrinhPTTTNoiTruDungCuUC.Designer.cs">
+      <DependentUpon>mncTuongTrinhPTTTNoiTruDungCuUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncTuongTrinhPTTTNoiTruGayMePTVienUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncTuongTrinhPTTTNoiTruGayMePTVienUC.Designer.cs">
+      <DependentUpon>mncTuongTrinhPTTTNoiTruGayMePTVienUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncTuongTrinhThuThuatNgoaiTruGMHSUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncTuongTrinhThuThuatNgoaiTruGMHSUC.Designer.cs">
+      <DependentUpon>mncTuongTrinhThuThuatNgoaiTruGMHSUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncTuongTrinhThuThuatNgoaiTruUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncTuongTrinhThuThuatNgoaiTruUC.Designer.cs">
+      <DependentUpon>mncTuongTrinhThuThuatNgoaiTruUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncTuongTrinhThuThuatNoiTruUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncTuongTrinhThuThuatNoiTruUC.Designer.cs">
+      <DependentUpon>mncTuongTrinhThuThuatNoiTruUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncXepLichMoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncXepLichMoUC.Designer.cs">
+      <DependentUpon>mncXepLichMoUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="mncBienBanHoiChuanUC.resx">
+      <DependentUpon>mncBienBanHoiChuanUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncDanhSachBenhNhanChoMoUC.resx">
+      <DependentUpon>mncDanhSachBenhNhanChoMoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncDanhSachBenhNhanKhamHoiChuanUC.resx">
+      <DependentUpon>mncDanhSachBenhNhanKhamHoiChuanUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncDanhSachKhamGayMeUC.resx">
+      <DependentUpon>mncDanhSachKhamGayMeUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncDanhSachThongTinLichMoUC.resx">
+      <DependentUpon>mncDanhSachThongTinLichMoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncKhamGayMeBenhNhanTimUC.resx">
+      <DependentUpon>mncKhamGayMeBenhNhanTimUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncKhamGayMeNguoiLonUC.resx">
+      <DependentUpon>mncKhamGayMeNguoiLonUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncTuongTrinhPTTTNoiTruDungCuUC.resx">
+      <DependentUpon>mncTuongTrinhPTTTNoiTruDungCuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncTuongTrinhPTTTNoiTruGayMePTVienUC.resx">
+      <DependentUpon>mncTuongTrinhPTTTNoiTruGayMePTVienUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncTuongTrinhThuThuatNgoaiTruGMHSUC.resx">
+      <DependentUpon>mncTuongTrinhThuThuatNgoaiTruGMHSUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncTuongTrinhThuThuatNgoaiTruUC.resx">
+      <DependentUpon>mncTuongTrinhThuThuatNgoaiTruUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncTuongTrinhThuThuatNoiTruUC.resx">
+      <DependentUpon>mncTuongTrinhThuThuatNoiTruUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncXepLichMoUC.resx">
+      <DependentUpon>mncXepLichMoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ThuVien\ThuVien.csproj">
+      <Project>{0773f5df-53d2-43f6-af25-55f77f822a31}</Project>
+      <Name>ThuVien</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

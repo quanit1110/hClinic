@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1B2EFA3-E8AC-4AC2-B4AF-C0C18053AB98}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DanhMuc</RootNamespace>
+    <AssemblyName>DanhMuc</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Diagram.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDiagram.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="mnc1ChuyenKhoaKhamPhongBanUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1ChuyenKhoaKhamPhongBanUC.Designer.cs">
+      <DependentUpon>mnc1ChuyenKhoaKhamPhongBanUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1CongTyBHTNGiaDichVuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1CongTyBHTNGiaDichVuUC.Designer.cs">
+      <DependentUpon>mnc1CongTyBHTNGiaDichVuUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DanhMucBacSiDichVuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DanhMucBacSiDichVuUC.Designer.cs">
+      <DependentUpon>mnc1DanhMucBacSiDichVuUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DanhMucPhongBanGiuongBenhUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DanhMucPhongBanGiuongBenhUC.Designer.cs">
+      <DependentUpon>mnc1DanhMucPhongBanGiuongBenhUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DanhMucPhongBanKhoDuocUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DanhMucPhongBanKhoDuocUC.Designer.cs">
+      <DependentUpon>mnc1DanhMucPhongBanKhoDuocUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DanhMucPhongBanLoaiGiaUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DanhMucPhongBanLoaiGiaUC.Designer.cs">
+      <DependentUpon>mnc1DanhMucPhongBanLoaiGiaUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DanhMucPhongBanThucHienNhiemVuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DanhMucPhongBanThucHienNhiemVuUC.Designer.cs">
+      <DependentUpon>mnc1DanhMucPhongBanThucHienNhiemVuUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DanhMucPhongKhamBacSiUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DanhMucPhongKhamBacSiUC.Designer.cs">
+      <DependentUpon>mnc1DanhMucPhongKhamBacSiUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DinhNghiaDMDuocUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DinhNghiaDMDuocUC.Designer.cs">
+      <DependentUpon>mnc1DinhNghiaDMDuocUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DinhNghiaNhomKhangSinhDoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DinhNghiaNhomKhangSinhDoUC.Designer.cs">
+      <DependentUpon>mnc1DinhNghiaNhomKhangSinhDoUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMBacSiBenNgoaiUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMBacSiBenNgoaiUC.Designer.cs">
+      <DependentUpon>mnc1DMBacSiBenNgoaiUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMCauHinhDoiTuongKhoDuocBenhAnNgoaiTruUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMCauHinhDoiTuongKhoDuocBenhAnNgoaiTruUC.Designer.cs">
+      <DependentUpon>mnc1DMCauHinhDoiTuongKhoDuocBenhAnNgoaiTruUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMCauHinhDoiTuongKhoDuocNoiTruUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMCauHinhDoiTuongKhoDuocNoiTruUC.Designer.cs">
+      <DependentUpon>mnc1DMCauHinhDoiTuongKhoDuocNoiTruUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMCoSoTrucDuocUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMCoSoTrucDuocUC.Designer.cs">
+      <DependentUpon>mnc1DMCoSoTrucDuocUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDichVuGiaTriChuanUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDichVuGiaTriChuanUC.Designer.cs">
+      <DependentUpon>mnc1DMDichVuGiaTriChuanUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDichVuPhanNhomDichVuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDichVuPhanNhomDichVuUC.Designer.cs">
+      <DependentUpon>mnc1DMDichVuPhanNhomDichVuUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDichVuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDichVuUC.Designer.cs">
+      <DependentUpon>mnc1DMDichVuUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDoiTuongDichVuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDoiTuongDichVuUC.Designer.cs">
+      <DependentUpon>mnc1DMDoiTuongDichVuUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDoiTuongDuocCoLoiUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDoiTuongDuocCoLoiUC.Designer.cs">
+      <DependentUpon>mnc1DMDoiTuongDuocCoLoiUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDoiTuongDuocUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDoiTuongDuocUC.Designer.cs">
+      <DependentUpon>mnc1DMDoiTuongDuocUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDoiTuongGiaLoaiGiaUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDoiTuongGiaLoaiGiaUC.Designer.cs">
+      <DependentUpon>mnc1DMDoiTuongGiaLoaiGiaUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDoiTuongKhoDuocUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDoiTuongKhoDuocUC.Designer.cs">
+      <DependentUpon>mnc1DMDoiTuongKhoDuocUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDoiTuongNguonHangUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDoiTuongNguonHangUC.Designer.cs">
+      <DependentUpon>mnc1DMDoiTuongNguonHangUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDoiTuongPhongBenhUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDoiTuongPhongBenhUC.Designer.cs">
+      <DependentUpon>mnc1DMDoiTuongPhongBenhUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDuocBacSiUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDuocBacSiUC.Designer.cs">
+      <DependentUpon>mnc1DMDuocBacSiUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDuocCanhBaoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDuocCanhBaoUC.Designer.cs">
+      <DependentUpon>mnc1DMDuocCanhBaoUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDuocDongChiTraUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDuocDongChiTraUC.Designer.cs">
+      <DependentUpon>mnc1DMDuocDongChiTraUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDuocKhoDuocBookingTheoPhamViUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDuocKhoDuocBookingTheoPhamViUC.Designer.cs">
+      <DependentUpon>mnc1DMDuocKhoDuocBookingTheoPhamViUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDuocNhaThuocUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDuocNhaThuocUC.Designer.cs">
+      <DependentUpon>mnc1DMDuocNhaThuocUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDuocTemplateUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDuocTemplateUC.Designer.cs">
+      <DependentUpon>mnc1DMDuocTemplateUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDuocTheoNguonHangUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDuocTheoNguonHangUC.Designer.cs">
+      <DependentUpon>mnc1DMDuocTheoNguonHangUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMGiaBanDuocBenhVienUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMGiaBanDuocBenhVienUC.Designer.cs">
+      <DependentUpon>mnc1DMGiaBanDuocBenhVienUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMGiaBanDuocNhaThuocUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMGiaBanDuocNhaThuocUC.Designer.cs">
+      <DependentUpon>mnc1DMGiaBanDuocNhaThuocUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMGiaDichVuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMGiaDichVuUC.Designer.cs">
+      <DependentUpon>mnc1DMGiaDichVuUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMGiaGiuongBenhUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMGiaGiuongBenhUC.Designer.cs">
+      <DependentUpon>mnc1DMGiaGiuongBenhUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMGiaThauBenhVienUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMGiaThauBenhVienUC.Designer.cs">
+      <DependentUpon>mnc1DMGiaThauBenhVienUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DanhMucGiuongBenhUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DanhMucGiuongBenhUC.Designer.cs">
+      <DependentUpon>mnc1DanhMucGiuongBenhUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMHoatChatUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMHoatChatUC.Designer.cs">
+      <DependentUpon>mnc1DMHoatChatUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMDuocBenhVienUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMDuocBenhVienUC.Designer.cs">
+      <DependentUpon>mnc1DMDuocBenhVienUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMNhanVienHinhAnhUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMNhanVienHinhAnhUC.Designer.cs">
+      <DependentUpon>mnc1DMNhanVienHinhAnhUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMNhanVienUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMNhanVienUC.Designer.cs">
+      <DependentUpon>mnc1DMNhanVienUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMNoiDungKhamBenhUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMNoiDungKhamBenhUC.Designer.cs">
+      <DependentUpon>mnc1DMNoiDungKhamBenhUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMNoiLinhDuocUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMNoiLinhDuocUC.Designer.cs">
+      <DependentUpon>mnc1DMNoiLinhDuocUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMPhanLoaiPhauThuatUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMPhanLoaiPhauThuatUC.Designer.cs">
+      <DependentUpon>mnc1DMPhanLoaiPhauThuatUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMQuanLyKhoNhapTuNCCUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMQuanLyKhoNhapTuNCCUC.Designer.cs">
+      <DependentUpon>mnc1DMQuanLyKhoNhapTuNCCUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DMTuongTacThuocUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DMTuongTacThuocUC.Designer.cs">
+      <DependentUpon>mnc1DMTuongTacThuocUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1GioiHanDuocTonKhoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1GioiHanDuocTonKhoUC.Designer.cs">
+      <DependentUpon>mnc1GioiHanDuocTonKhoUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1MappingDoiTuongDoiTuongKhuAUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1MappingDoiTuongDoiTuongKhuAUC.Designer.cs">
+      <DependentUpon>mnc1MappingDoiTuongDoiTuongKhuAUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1NhanVienNguoiSuDungUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1NhanVienNguoiSuDungUC.Designer.cs">
+      <DependentUpon>mnc1NhanVienNguoiSuDungUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1TuDienKetLuanUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1TuDienKetLuanUC.Designer.cs">
+      <DependentUpon>mnc1TuDienKetLuanUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncDanhMucBenhNhanUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncDanhMucBenhNhanUC.Designer.cs">
+      <DependentUpon>mncDanhMucBenhNhanUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnc1DanhMucPhongBanUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnc1DanhMucPhongBanUC.Designer.cs">
+      <DependentUpon>mnc1DanhMucPhongBanUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncDanhMucCauHinhXuatMotBuocUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncDanhMucCauHinhXuatMotBuocUC.Designer.cs">
+      <DependentUpon>mncDanhMucCauHinhXuatMotBuocUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncDanhMucCheckListUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncDanhMucCheckListUC.Designer.cs">
+      <DependentUpon>mncDanhMucCheckListUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncDanhSachICDThuongDungUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncDanhSachICDThuongDungUC.Designer.cs">
+      <DependentUpon>mncDanhSachICDThuongDungUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncDinhNghiaDanhMucUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncDinhNghiaDanhMucUC.Designer.cs">
+      <DependentUpon>mncDinhNghiaDanhMucUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncGopMaYTeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncGopMaYTeUC.Designer.cs">
+      <DependentUpon>mncGopMaYTeUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncHeThongDanhMucUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncHeThongDanhMucUC.Designer.cs">
+      <DependentUpon>mncHeThongDanhMucUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncMenuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncMenuUC.Designer.cs">
+      <DependentUpon>mncMenuUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncPhanQuyenBenhSuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncPhanQuyenBenhSuUC.Designer.cs">
+      <DependentUpon>mncPhanQuyenBenhSuUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncThietLapBaoCaoTheoDichVuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncThietLapBaoCaoTheoDichVuUC.Designer.cs">
+      <DependentUpon>mncThietLapBaoCaoTheoDichVuUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mncThietLapBaoCaoTheoICDUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mncThietLapBaoCaoTheoICDUC.Designer.cs">
+      <DependentUpon>mncThietLapBaoCaoTheoICDUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="mnc1ChuyenKhoaKhamPhongBanUC.resx">
+      <DependentUpon>mnc1ChuyenKhoaKhamPhongBanUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1CongTyBHTNGiaDichVuUC.resx">
+      <DependentUpon>mnc1CongTyBHTNGiaDichVuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DanhMucBacSiDichVuUC.resx">
+      <DependentUpon>mnc1DanhMucBacSiDichVuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DanhMucPhongBanGiuongBenhUC.resx">
+      <DependentUpon>mnc1DanhMucPhongBanGiuongBenhUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DanhMucPhongBanKhoDuocUC.resx">
+      <DependentUpon>mnc1DanhMucPhongBanKhoDuocUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DanhMucPhongBanLoaiGiaUC.resx">
+      <DependentUpon>mnc1DanhMucPhongBanLoaiGiaUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DanhMucPhongBanThucHienNhiemVuUC.resx">
+      <DependentUpon>mnc1DanhMucPhongBanThucHienNhiemVuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DanhMucPhongKhamBacSiUC.resx">
+      <DependentUpon>mnc1DanhMucPhongKhamBacSiUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DinhNghiaDMDuocUC.resx">
+      <DependentUpon>mnc1DinhNghiaDMDuocUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DinhNghiaNhomKhangSinhDoUC.resx">
+      <DependentUpon>mnc1DinhNghiaNhomKhangSinhDoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMBacSiBenNgoaiUC.resx">
+      <DependentUpon>mnc1DMBacSiBenNgoaiUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMCauHinhDoiTuongKhoDuocBenhAnNgoaiTruUC.resx">
+      <DependentUpon>mnc1DMCauHinhDoiTuongKhoDuocBenhAnNgoaiTruUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMCauHinhDoiTuongKhoDuocNoiTruUC.resx">
+      <DependentUpon>mnc1DMCauHinhDoiTuongKhoDuocNoiTruUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMCoSoTrucDuocUC.resx">
+      <DependentUpon>mnc1DMCoSoTrucDuocUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDichVuGiaTriChuanUC.resx">
+      <DependentUpon>mnc1DMDichVuGiaTriChuanUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDichVuPhanNhomDichVuUC.resx">
+      <DependentUpon>mnc1DMDichVuPhanNhomDichVuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDichVuUC.resx">
+      <DependentUpon>mnc1DMDichVuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDoiTuongDichVuUC.resx">
+      <DependentUpon>mnc1DMDoiTuongDichVuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDoiTuongDuocCoLoiUC.resx">
+      <DependentUpon>mnc1DMDoiTuongDuocCoLoiUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDoiTuongDuocUC.resx">
+      <DependentUpon>mnc1DMDoiTuongDuocUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDoiTuongGiaLoaiGiaUC.resx">
+      <DependentUpon>mnc1DMDoiTuongGiaLoaiGiaUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDoiTuongKhoDuocUC.resx">
+      <DependentUpon>mnc1DMDoiTuongKhoDuocUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDoiTuongNguonHangUC.resx">
+      <DependentUpon>mnc1DMDoiTuongNguonHangUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDoiTuongPhongBenhUC.resx">
+      <DependentUpon>mnc1DMDoiTuongPhongBenhUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDuocBacSiUC.resx">
+      <DependentUpon>mnc1DMDuocBacSiUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDuocCanhBaoUC.resx">
+      <DependentUpon>mnc1DMDuocCanhBaoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDuocDongChiTraUC.resx">
+      <DependentUpon>mnc1DMDuocDongChiTraUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDuocKhoDuocBookingTheoPhamViUC.resx">
+      <DependentUpon>mnc1DMDuocKhoDuocBookingTheoPhamViUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDuocNhaThuocUC.resx">
+      <DependentUpon>mnc1DMDuocNhaThuocUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDuocTemplateUC.resx">
+      <DependentUpon>mnc1DMDuocTemplateUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDuocTheoNguonHangUC.resx">
+      <DependentUpon>mnc1DMDuocTheoNguonHangUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMGiaBanDuocBenhVienUC.resx">
+      <DependentUpon>mnc1DMGiaBanDuocBenhVienUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMGiaBanDuocNhaThuocUC.resx">
+      <DependentUpon>mnc1DMGiaBanDuocNhaThuocUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMGiaDichVuUC.resx">
+      <DependentUpon>mnc1DMGiaDichVuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMGiaGiuongBenhUC.resx">
+      <DependentUpon>mnc1DMGiaGiuongBenhUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMGiaThauBenhVienUC.resx">
+      <DependentUpon>mnc1DMGiaThauBenhVienUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DanhMucGiuongBenhUC.resx">
+      <DependentUpon>mnc1DanhMucGiuongBenhUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMHoatChatUC.resx">
+      <DependentUpon>mnc1DMHoatChatUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMDuocBenhVienUC.resx">
+      <DependentUpon>mnc1DMDuocBenhVienUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMNhanVienHinhAnhUC.resx">
+      <DependentUpon>mnc1DMNhanVienHinhAnhUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMNhanVienUC.resx">
+      <DependentUpon>mnc1DMNhanVienUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMNoiDungKhamBenhUC.resx">
+      <DependentUpon>mnc1DMNoiDungKhamBenhUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMNoiLinhDuocUC.resx">
+      <DependentUpon>mnc1DMNoiLinhDuocUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMPhanLoaiPhauThuatUC.resx">
+      <DependentUpon>mnc1DMPhanLoaiPhauThuatUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMQuanLyKhoNhapTuNCCUC.resx">
+      <DependentUpon>mnc1DMQuanLyKhoNhapTuNCCUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DMTuongTacThuocUC.resx">
+      <DependentUpon>mnc1DMTuongTacThuocUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1GioiHanDuocTonKhoUC.resx">
+      <DependentUpon>mnc1GioiHanDuocTonKhoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1MappingDoiTuongDoiTuongKhuAUC.resx">
+      <DependentUpon>mnc1MappingDoiTuongDoiTuongKhuAUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1NhanVienNguoiSuDungUC.resx">
+      <DependentUpon>mnc1NhanVienNguoiSuDungUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1TuDienKetLuanUC.resx">
+      <DependentUpon>mnc1TuDienKetLuanUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncDanhMucBenhNhanUC.resx">
+      <DependentUpon>mncDanhMucBenhNhanUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnc1DanhMucPhongBanUC.resx">
+      <DependentUpon>mnc1DanhMucPhongBanUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncDanhMucCauHinhXuatMotBuocUC.resx">
+      <DependentUpon>mncDanhMucCauHinhXuatMotBuocUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncDanhMucCheckListUC.resx">
+      <DependentUpon>mncDanhMucCheckListUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncDanhSachICDThuongDungUC.resx">
+      <DependentUpon>mncDanhSachICDThuongDungUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncDinhNghiaDanhMucUC.resx">
+      <DependentUpon>mncDinhNghiaDanhMucUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncGopMaYTeUC.resx">
+      <DependentUpon>mncGopMaYTeUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncHeThongDanhMucUC.resx">
+      <DependentUpon>mncHeThongDanhMucUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncMenuUC.resx">
+      <DependentUpon>mncMenuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncPhanQuyenBenhSuUC.resx">
+      <DependentUpon>mncPhanQuyenBenhSuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncThietLapBaoCaoTheoDichVuUC.resx">
+      <DependentUpon>mncThietLapBaoCaoTheoDichVuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mncThietLapBaoCaoTheoICDUC.resx">
+      <DependentUpon>mncThietLapBaoCaoTheoICDUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{76f7cf30-f436-447c-804a-8462f78a8a89}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emtity\EntityClass.csproj">
+      <Project>{ff9da219-a8c4-4a75-9a55-db128e2d38e7}</Project>
+      <Name>EntityClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThuVien\ThuVien.csproj">
+      <Project>{0773f5df-53d2-43f6-af25-55f77f822a31}</Project>
+      <Name>ThuVien</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
